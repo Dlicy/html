@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本草备要</title>
+    <style>
+        /* 浮动实现 */
+        .box{
+            width: 30%;
+            height: 900px;
+            border: 1px solid #e0f2ff;
+            display: flex;
+            /* justify-content: space-between; */
+        }
+        .boxdiv{
+            width: 308px;
+            height: 30px;
+            border: 1px solid #e0f2ff;
+            background-color: #f2f9ff;
+        }
+        .search {
+            height: 20px;
+            width:  170px;
+            border: 1px solid #060707;
+            background-color: #f2f9ff;
+        }
+        .list {
+            width: 300px;
+            color: #507fc8;
+            background-color: #f2f9ff;
+            border: 5px solid #f2f9ff;
+            font-size: 20px;
+        }
+        .first {
+            width: 70%;
+            height: 70px;
+            background-color: #f2f9ff;
+            border: 5px solid #f2f9ff;
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            color: #507fc8;
+            line-height: 70px;
+        }
+        .second {
+            width: 70%;
+            height: 400px;
+        }
+        .third {
+            width: 70%;
+            height: 350px;
+        }
+        .second_1 {
+            width: 1540px;
+            height: 50px;
+            color: #507fc8;
+            background-color: #ffffff;
+            border: 5px solid #ffffff;
+            font-size: 20px;
+            display: flex;
+            text-indent: 2em; /* 使用em单位进行缩进 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>
+            <div class="boxdiv">
+                <input type="text" class="search">
+                <input value="搜索"  type="submit"> 
+                <br><br>
+            </div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 民间&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 民族&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 典故</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 对联&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 谜语&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 史料</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 溯源&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 名家&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 文化</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 中西&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 中药&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 方剂</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 偏方&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 膏药&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 成药</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 药茶&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 药酒&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 药浴</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 疗法&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 针灸&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 拔罐</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 推拿&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 刮痧&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 火疗</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 气功&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 食疗&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 自疗</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 术语&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 理论&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 辩证</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 四诊&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 诊断&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 诊法</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 临床&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 内科&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 外科</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 男科&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 男性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 妇科</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 美容&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 丰胸&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 减肥</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 女性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 性病&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 儿科</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 育儿&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 老年&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 口腔</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 眼科&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 耳鼻&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 传染</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 皮肤&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 肿瘤&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 急救</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 就医&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 生活&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 用药</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 药识&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 知识&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 饮食</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 健康&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 心理&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 四季</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 养生&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 保健&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 搜索</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 疾病&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 药材&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 方剂</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 本草&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 儿科&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 方言</div>
+            <div class="list">&nbsp&nbsp&nbsp&nbsp 妇科&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 教材&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 经论</div>
+        </div>
+        <div>
+            <div class="first" >
+                中药分类查询
+                <br><br>
+            </div>
+            <div class="second">
+                <div class="second_1"><p>按归经查药:胃经、脾经、大肠经、肾经、肺经、心经、肝经、膀胱经、胆经、三焦经、小肠经、心包经</p></div>
+                <div class="second_1"><p>按药性查药:寒性、热性、温性、凉性、平性</p></div>
+                <div class="second_1"><p>按药味查药:甘味、苦味、辛味、酸味、咸味、涩味、淡味</p></div>
+                <div class="second_1"><p>按名称查药: A B C D E F G H J K L M N O P Q R S I W X Y Z</p></div>
+                <div class="second_1"><p>中药类型:解表药、清热药、泻下药、祛风湿药、芳香化湿药、利水渗湿药、温里药、理气药、消导药、驱虫药、止血药、<br>活血药、化痰止咳平喘药、安神药、平肝熄风药、开窍药、补益药、固涩药、外用药。</p></div>
+                <br> 
+                <div class="second_1"><p>方剂类型:解表剂、清热剂、泻下剂、祛风湿剂、祛湿利水剂、温里剂、理气剂、消导剂、驱虫剂、止血剂、活血剂、<br> 化痰止咳平喘剂、 安神剂、熄风剂、开窍剂、补益剂、固涩剂。</p></div>
+
+            </div>
+            <div class="first" >
+                《中药大辞典》：A
+                <br><br>
+            </div>
+            <div class="third">
+                <div class="second_1">
+                    <p>
+                       阿尔泰紫菀&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       阿里红&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       阿里藤&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       阿魏&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       阿育魏实&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       埃蕾&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </p>
+                </div>
+                <div class="second_1">
+                    <p>
+                       矮地茶&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       矮脚枫叶&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       矮脚苦蒿&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       矮脚龙胆&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       矮脚罗伞&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </p>
+                </div>
+                <div class="second_1">
+                    <p>
+                       矮茎朱砂根&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       矮人陀&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       矮杨梅&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       艾纳香&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       艾纳香根&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       艾片&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </p>
+                </div>
+                <div class="second_1">
+                    <p>
+                       艾买&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       艾叶&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       安息香&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       桉叶&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       庵闾&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       庵闾子&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </p>
+                </div>
+                <div class="second_1">
+                    <p>
+                       庵魔勒&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       鹌鹑&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       暗紫贝母&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       凹朴皮&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       石荠苎&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
